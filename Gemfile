@@ -51,3 +51,8 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "letter_opener"
+gem "launchy"
+gem 'sinatra', '>= 1.3.0', :require => nil
+gem 'sidekiq'
