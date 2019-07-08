@@ -5,7 +5,7 @@ Rails.application.routes.draw do
 
 
 
-  get 'login/index'
+  post 'login/index'
 
   root 'signup#main'
 

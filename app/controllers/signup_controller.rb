@@ -1,8 +1,9 @@
 class SignupController < ApplicationController
   def main
     response = Signing.get_all(params)
-    byebug
-    UserWorker.perform_async(params[:email])
+    if(response[:success])
+      UserWorker.perform_async(params[:email])
+    end
     render json: response
   end
 

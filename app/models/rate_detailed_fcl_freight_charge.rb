@@ -1,0 +1,2 @@
+class RateDetailedFclFreightCharge < ApplicationRecord
+end
