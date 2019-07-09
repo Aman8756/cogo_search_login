@@ -8,4 +8,8 @@ Rails.application.routes.draw do
 
   post 'signup/main' => 'signup#main'
 
+  get 'search/location' => 'location#index'
+
+  get 'search/fetch_rate' => 'fetch_rate#fetch_rate'
+
 end
