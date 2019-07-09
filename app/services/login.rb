@@ -6,6 +6,13 @@ class Login
     email = params[:email]
     password = params[:password]
 
+    user = User.where(email: email).first
+
+
+    if(user.present? && !(user.verify))
+      return {success:false, message:"email not verified"}
+    end
+
     if(!(params.has_key?(:email)))
       return {success:false, message: "input email"}
     end
@@ -14,7 +21,6 @@ class Login
       return {success:false, message: "input password"}
     end
 
-    user = User.where(email: email).first
 
     if(user.present? && user.authenticate(password))   #redirect 2nd page
       return {success:true, message: "login successfully"}

@@ -11,6 +11,7 @@ Rails.application.routes.draw do
 
   post 'signup/main' => 'signup#main'
   # post 'signup/register' => 'signup#register'
+  get 'verify/index' => 'verify#index'
 
   get 'search/location' => 'location#index'
 
