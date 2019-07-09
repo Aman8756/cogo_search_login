@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  origin_port_id: MyString
+  destination_port_id: MyString
+  shipping_line_id: MyString
+  total_price: MyString
+
+two:
+  origin_port_id: MyString
+  destination_port_id: MyString
+  shipping_line_id: MyString
+  total_price: MyString

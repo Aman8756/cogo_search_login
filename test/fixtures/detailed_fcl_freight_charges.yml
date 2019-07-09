@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  shipping_line_id: 
+  freight_forwarder_id: 
+  container_size: 
+  container_type: 
+  total_price: 1
+  start: 2019-07-05
+  end: 2019-07-05
+
+two:
+  shipping_line_id: 
+  freight_forwarder_id: 
+  container_size: 
+  container_type: 
+  total_price: 1
+  start: 2019-07-05
+  end: 2019-07-05
