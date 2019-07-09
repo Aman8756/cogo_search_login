@@ -27,7 +27,9 @@ class Signing
       return {success:false, message:"User Already present"}
     end
 
-    user = User.create(email:email, password:password, full_name:full_name)
+    # byebug
+
+    user = User.create(email:email, password:password, full_name:full_name,verify:false)
 
     if(user.present?)
       return {success:true}

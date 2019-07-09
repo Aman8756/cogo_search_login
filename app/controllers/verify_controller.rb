@@ -5,6 +5,8 @@ class VerifyController < ApplicationController
     user = User.where(email: email)
 
     if(user.present?)
+      user.update(verify: true)
+      # byebug
       redirect_to "http://localhost:3015/"
     end
 
