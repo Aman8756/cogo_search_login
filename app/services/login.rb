@@ -4,13 +4,13 @@ class Login
   #include BCrypt
   def self.get_all(params)
     email = params[:email]
-    password = params[:password_digest]
+    password = params[:password]
 
     if(!(params.has_key?(:email)))
       return {success:false, message: "input email"}
     end
 
-    if (!(params.has_key?(:password_digest)))
+    if (!(params.has_key?(:password)))
       return {success:false, message: "input password"}
     end
 
