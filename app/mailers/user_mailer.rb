@@ -1,5 +1,6 @@
 class UserMailer < ApplicationMailer
   def welcome_email(email)
-    mail(to: email, subject: 'Welcome to Cogoport')
+    @email= email
+    mail(to: email, subject: 'Cogoport Verification')
   end
 end
