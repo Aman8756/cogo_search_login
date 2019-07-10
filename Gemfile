@@ -60,3 +60,6 @@ gem "letter_opener"
 gem "launchy"
 gem 'sinatra', '>= 1.3.0', :require => nil
 gem 'sidekiq'
+gem 'redis'
+gem 'redis-rails'
+gem 'redis-namespace'

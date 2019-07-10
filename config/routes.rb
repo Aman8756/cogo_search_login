@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   get 'search/location' => 'location#index'
 
   get 'search/fetch_rate' => 'fetch_rate#fetch_rate'
+  get 'logout/index' => 'logout#index'
 
 end
